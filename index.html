@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeNet</title>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <main>
+        <section>
+            <!-- Nav -->
+            <nav class="w-100 fixed h-3 p-12 px-32 flex flex-row justify-between items-center z-index-99" id="nav">
+                <div>
+                    <h4 class="text-white">SafeNet</h4>
+                </div>
+                <div class="text-white flex flex-row gap-12 items-center" id="nav-items">
+                   <a href="#home" class="cursor-pointer link text-white" style="font-size:0.9rem">Home</a>
+                   <a href="#pusat-bantuan" class="cursor-pointer link text-white" style="font-size:0.9rem">Pusat Bantuan</a>
+                   <a href="#informasi" class="cursor-pointer link text-white" style="font-size:0.9rem">Informasi</a>
+                   <a href="#cara-kerja" class="cursor-pointer link text-white" style="font-size:0.9rem">Cara Kerja</a>
+                </div>
+                <div id="menu-bar" class="hidden">
+                    <i class="fa-solid fa-bars text-white cursor-pointer" ></i>
+                </div>
+            </nav>
+            <div class="fixed hidden w-100 flex flex-col p-8  z-index-99" style="top:50px;background-color: white;box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);" id="nav-items-mobile">
+                <a href="#home" class="cursor-pointer link text-black text-black  mb-12" style="font-size:0.9rem">Home</a>
+                <a href="#pusat-bantuan" class="cursor-pointer link text-black  mb-12" style="font-size:0.9rem">Pusat Bantuan</a>
+                <a href="#informasi" class="cursor-pointer link text-black  mb-12" style="font-size:0.9rem">Informasi</a>
+                <a href="#cara-kerja" class="cursor-pointer link text-black  mb-12" style="font-size:0.9rem">Cara Kerja</a>
+            </div>
+            <!--  -->
+            <!-- Hero -->
+            <div class="main-bg h-full-screen flex items-center justify-center mb-16" id="home">
+                <div class="flex items-center justify-center flex-col w-48 text-center">
+                    <h2 class="text-white mb-12" style="font-size:1.8rem;">
+                        Butuh Bantuan?
+                    </h2>
+                    <p class="text-white mb-12" style="font-size:1rem;" >Kami adalah rumah bagi keberanian, tempat di mana setiap wanita yang terluka dapat menemukan perlindungan, dukungan, dan panduan untuk memulai kembali hidup mereka.</p>
+                    <a href="#pusat-bantuan">
+                        <button class="bg-primary btn w-12 p-8 rounded-lg text-white cursor-pointer">Pusat Bantuan</button>
+                    </a>
+                </div>
+            </div>
+            <!--  -->
+
+            <!-- Pusat Bantuan -->
+            <div class="flex justify-center w-100 p-12 flex-col" style="padding:32px" id="pusat-bantuan">
+                <div class="mb-12">
+                    <h2 class="text-center mb-8 text-primary">Pusat Bantuan</h2>
+                    <p class="text-center" style="font-size:0.9rem">Cari bantuan bagi korban kekerasan menurut kategori</p>
+                </div>
+                <div class="flex flex-wrap gap-16" id="container-bantuan">
+                    <!-- card 1 -->
+                    <div class="card-bantuan w-18 border-primary" title="Konsultasi" id="card-konsultasi" name='konsultasi' data-aos="fade-up">
+                        <h4 class="mb-6 text-primary" style="font-size:1.2rem"><i class="fa-regular fa-message"></i> Konsultasi</h4>
+                        <p class="mb-8" style="font-size:0.9rem">Konsultasi untuk mendapatkan saran dan panduan dari ahli atau konselor yang berpengalaman.</p>
+                        <span class="text-subtitle">Lihat Selengkapnya...</span>
+                    </div>
+                    <!--  -->
+
+                    <!-- card 2 -->
+                    <div class="card-bantuan w-18 border-primary" title="Bantuan Hukum" id="card-bantuanhukum"  data-aos="fade-up">
+                        <h4 class="mb-6 text-primary" style="font-size:1.2rem"><i class="fa-solid fa-scale-balanced"></i> Bantuan Hukum</h4>
+                        <p class="mb-8" style="font-size:0.9rem">Layanan yang menyediakan nasihat dan representasi hukum kepada korban yang membutuhkan.</p>
+                        <span class="text-subtitle">Lihat Selengkapnya...</span>
+                    </div>
+                    <!--  -->
+
+                    <!-- card 3 -->
+                    <div class="card-bantuan w-18 border-primary" title="Rumah Aman" id="card-rumahaman"  data-aos="fade-up">
+                        <h4 class="mb-6 text-primary" style="font-size:1.2rem"><i class="fa-solid fa-house"></i> Rumah Aman</h4>
+                        <p class="mb-8" style="font-size:0.9rem">Layanan untuk memberi tempat perlindungan bagi korban yang mengalami kekerasan dalam rumah tangga atau kekerasan seksual..</p>
+                        <span class="text-subtitle">Lihat Selengkapnya...</span>
+                    </div>
+                    <!--  -->
+
+                    <!-- card 4 -->
+                    <div class="card-bantuan w-18 border-primary" title="Kesehatan" id="card-kesehatan" data-aos="fade-up">
+                        <h4 class="mb-6 text-primary" style="font-size:1.2rem"><i class="fa-solid fa-heart-pulse"></i> Kesehatan</h4>
+                        <p class="mb-8" style="font-size:0.9rem">Layanan medis bagi korban kekerasan, misalnya layanan kb, pemeriksaan kehamilan, dan pengoabtan IMS.</p>
+                        <span class="text-subtitle">Lihat Selengkapnya...</span>
+                    </div>
+                    <!--  -->
+    
+                    <!-- card 5 -->
+                    <div class="card-bantuan w-18 border-primary" title="Konseling" id="card-konseling" data-aos="fade-up">
+                        <h4 class="mb-6 text-primary" style="font-size:1.2rem" ><i class="fa-regular fa-comments"></i> Konseling</h4>
+                        <p class="mb-8" style="font-size:0.9rem">Layanan bagi korban untuk berbicara dengan seorang profesional kesehatan mental untuk mengeksplorasi psikologis korban..</p>
+                        <span class="text-subtitle">Lihat Selengkapnya...</span>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+            <!--  -->
+
+            <!-- selected kategori -->
+            <div  class="flex justify-center w-100 p-12 flex-col" id="selected-kategori" style="padding:32px;display: none;">
+                <div>
+                    <h2 class="text-center mb-8 text-primary" id="selected-kategori-title">Konsultasi</h2>
+                    <div class="flex flex-row gap-12 justify-center" id="list-kota">
+                        <!-- Dom Loaded -->
+                    </div>
+                </div>
+                <div id="content" class="flex flex-wrap gap-8 flex ">
+                         <!-- Dom Loaded  -->
+                </div>
+            </div>
+            <!--  -->
+
+            <!-- informasi -->
+            <div class="flex justify-center w-100 p-12 flex-col" id="informasi" style="padding:32px">
+                <div class="mb-20">
+                    <h2 class="text-center text-primary mb-8">Informasi</h2>
+                    <p class="text-center" style="font-size:0.9rem">Dapatklan sejumlah informasi tentang kekerasan seksual disini</p>
+                </div>
+                <div class='flex flex-wrap' id="informasi-card">
+                    <div class="card-informasi border-primary w-18 text-center" id="btn-modal-1" data-aos="zoom-in">
+                        <h4 id="btn-modal-1">Pengertian Kekerasan Seksual</h4>
+                        <span class="text-subtitle" id="btn-modal-1">Lihat selengkapnya...</span>
+                    </div>
+                    <div class="card-informasi border-primary w-18 text-center" id="btn-modal-2" data-aos="zoom-in">
+                        <h4 id="btn-modal-2">Kekerasan Seksual di Era Digital
+                        </h4>
+                        <span class="text-subtitle" id="btn-modal-2">Lihat selengkapnya...</span>
+                    </div>
+                    <div class="card-informasi border-primary w-18 text-center" id="btn-modal-3" data-aos="zoom-in">
+                        <h4 id="btn-modal-3">Apa Saja Hukuman Hukum Bagi Pelaku?
+                        </h4>
+                        <span id="btn-modal-3" class="text-subtitle">Lihat selengkapnya...</span>
+                    </div>
+                    <div class="card-informasi border-primary w-18 text-center" id="btn-modal-4" data-aos="zoom-in">
+                        <h4 id="btn-modal-4">Apa Yang Harus Kita Lakukan Sebagai Pelajar?
+                        </h4>
+                        <span id="btn-modal-4" class="text-subtitle">Lihat selengkapnya...</span>
+                    </div>
+
+                    <!-- Modal 1 -->
+                    <div class="modal" id="modal-1">
+                        <div class="modal-content" >
+                            <div class="modal-title">
+                                <h3>Pengertian Kekerasan Seksual</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Perilaku seksual yang kasar yang dilakukan oleh satu orang terhadap orang lain. Hal ini sering dilakukan dengan menggunakan kekerasan atau memanfaatkan pihak lain. Penganiayaan sering kali mengacu pada kejadian penyerangan seksual terhadap anak kecil, sedangkan kekerasan seksual adalah istilah yang digunakan untuk pola penyerangan seksual yang terus-menerus.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn bg-primary cursor-pointer p-8 rounded-md text-white" id="close-modal-1">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+
+                    <!-- Modal 2 -->
+                    <div class="modal" id="modal-2">
+                        <div class="modal-content">
+                            <div class="modal-title">
+                                <h3>Kekerasan Seksual di Era Digital</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p class="mb-8">Kekerasan seksual di era digital meningkat secara signifikan, terutama di Indonesia, dan sering menargetkan anak muda. Data terakhir menunjukkan bahwa kekerasan gender berbasis online di Indonesia diestimasi akan meningkat lebih dari 40% tahun ini.</p>
+                                <p class="mb-8">
+                                    Ada 281 kasus tercatat sepanjang 2019, dan sudah ada 659 kasus dalam rentang waktu 10bulan terakhir saja. Dari aspek gender, perempuan adalah korban utama dengan persentase71%. Kekerasan ini melibatkan berbagai bentuk, termasuk penyebaran foto, video, dantangkapan layar percakapan antara pelaku dengan korban, yang sering mengandung unsurintim dan pornografi korban. Pelaku biasanya adalah suami, mantan suami, mantan pacar,selingkuhan, maupun atasan korban.
+                                </p>
+                                
+                                <p>
+                                    Selain itu, kasus pelecehan terhadap perempuan secara online juga menunjukkan bahwa 39%wanita mengalami pelecehan di Facebook, diikuti oleh Instagram (23%), Whatsapp (14%),Snapchat (10%), Twitter (9%), dan TikTok (6%). Jenis serangan yang paling umum adalahbahasa kasar dan penghinaan, yang mempengaruhi 59% responden survei, diikuti olehbodyshaming dan ancaman kekerasan seksual yang mempengaruhi 39% dari responden. MeskipunIndonesia belum memiliki regulasi yang jelas tentang kekerasan berbasis gender online,upaya hukum dan pendidikan tentang kekerasan seksual di era digital menjadi penting untukmengurangi prevalensi dan dampak negatif dari kekerasan ini
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn bg-primary cursor-pointer p-8 rounded-md text-white" id="close-modal-2">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+
+                    <!-- Modal 3 -->
+                    <div class="modal" id="modal-3">
+                        <div class="modal-content">
+                            <div class="modal-title">
+                                <h3>Apa Saja Hukumam Hukum Bagi Para Pelaku</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p class="mb-8">
+                                    Hukum di Indonesia telah mengatur Kekerasan Berbasis Gender Online (KBGO) melalui beberapa undang-undang, termasuk UU Informasi dan Transaksi Elektronik (UU ITE) dan UU Tindak Pidana Kekerasan Seksual (UU TPKS). UU ITE, yang dikeluarkan pada tahun 3008, mencakup berbagai aspek hukum yang berkaitan dengan informasi dan transaksi elektronik, termasuk pelanggaran privasi dan penyebaran konten pribadi tanpa konsen (Non-Consensual Intimate Image Abuse - NCII) yang merupakan bentuk utama dari KBGO.
+                                </p>
+                                <p class="mb-8">
+                                    Namun, implementasi UU ITE dalam penegakan hukum KBGO sering kali dianggap tidak cukup, terutama karena potensi over kriminalisasi terhadap korban. Komnas Perempuan mencatat bahwa dalam penegakan hukum kasus KBGO, penggunaan UU ITE berpotensi mengkriminalisasi korban KBGO, yang bukanlah tujuan utama dari undang-undang tersebut. UU TPKS, yang dikeluarkan pada tahun 2022, dirancang untuk mengatur tindak pidana kekerasan seksual, termasuk kekerasan seksual yang dilakukan melalui media informasi dan transaksi elektronik (ITE).
+                                </p>
+                                <p class="mb-8">
+                                    UU ini diharapkan dapat memberikan kerangka hukum yang lebih spesifik dan efektif dalam penanganan kasus KBGO, termasuk kekerasan seksual yang terjadi di dunia digital. Namun, meskipun UU TPKS diharapkan dapat memberikan perlindungan yang lebih baik bagi korban KBGO, implementasinya masih diperlukan untuk memastikan bahwa korban mendapatkan perlindungan hukum yang memadai. Selain itu, diperlukan upaya lebih lanjut untuk meningkatkan kesadaran masyarakat tentang pentingnya kesetaraan gender dan penolakan terhadap kekerasan berbasis gender, serta pengawasan dan penegakan hukum yang lebih efektif.
+                                </p>
+                                    
+                                <p class="mb-8">
+                                    Dalam UU Tindak Pidana Kekerasan Seksual (UU TPKS) yang telah disahkan, terdapat beberapa hukuman yang diatur untuk pelaku kekerasan seksual, termasuk hukuman penjara dan denda. Misalnya, pejabat yang melakukan kekerasan seksual terancam dengan hukuman penjara sebesar 12 tahun sesuai dengan UU TPKS. Selain itu, mengambil dan membagikan gambar bermuatan seksual tanpa persetujuan dapat dihukum dengan penjara selama 4 tahun.
+                                </p>
+                                    
+                                <p class="mb-8">
+                                    UU TPKS juga mencakup hukuman tambahan untuk pelaku kekerasan seksual, yang menunjukkan bahwa hukuman tidak hanya terbatas pada penjara dan denda, tetapi juga mencakup efek jera yang lebih luas. Ini menunjukkan komitmen pemerintah Indonesia untuk mengatasi kekerasan seksual dengan cara yang lebih komprehensif, termasuk penegakan hukum yang lebih ketat dan pendidikan kesadaran masyarakat.
+                                </p>
+                                    
+                                <p class="mb-8">
+                                    UU TPKS dirancang untuk menjadi undang-undang yang memberikan perlindungan yang lebih baik bagi korban kekerasan seksual, termasuk korban di dunia digital. Dengan adanya UU ini, diharapkan dapat menciptakan lingkungan yang lebih aman bagi semua warga negara Indonesia, khususnya perempuan, dari kekerasan seksual.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn bg-primary cursor-pointer p-8 rounded-md text-white" id="close-modal-3">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+
+                    <!-- Modal 4 -->
+                    <div class="modal" id="modal-4">
+                        <div class="modal-content">
+                            <div class="modal-title">
+                                <h3>Apa Saja Hukumam Hukum Bagi Para Pelaku</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p class="mb-8">
+                                    Sebelum terjadi, terjadinya hal-hal yang tidak kita inginkan dimasa yang akan datang, kita sebagai penerus bangsa harus mencegah terjadinya kekerasan gender ataupun seksual. Sebagai pelajar, ada beberapa langkah yang dapat diambil untuk mencegah terjadinya kekerasan gender atau seksual:
+                                </p>
+
+                                <ol type="1">
+                                    <li class="mb-8">
+                                        1. Pendidikan dan Kesadaran : Pertama, penting untuk menjadi teredukasi tentang akar-akar kekerasan terhadap perempuan dan wanita. Baca buku dan artikel, bergabung dengan grup di sekolah, dan ikuti pelatihan yang tersedia untuk Anda. Pelajari tentang mitos dan realitas kekerasan gender dan bagaimana masyarakat kita mengizinkan hal tersebut. Perubahan Gaya Berbicara: Kata-kata sangat kuat, terutama ketika digunakan oleh orang-orang yang memiliki kekuasaan atas orang lain. Ubah cara Anda berbicara untuk membantu mengubah cara Anda berpikir. Hindari penggunaan nama yang berbasis gender yang merendahkan perempuan dan wanita.
+                                    </li>
+                                    <li class="mb-8">
+                                        2. Kritis terhadap Media : Periksa bagaimana media memperlihatkan perempuan dan wanita, baik di televisi, online, dalam majalah, atau dalam video musik. Media sering menggunakan gambar kekerasan terhadap wanita dan mengeksploitasi perempuan dan wanita untuk menjual produk. Tulis atau email perusahaan tentang gambar negatif mereka terhadap perempuan dan wanita dan jangan membeli produk mereka 1. Melaporkan Kekerasan: Jika Anda melihat foto atau postingan yang mengeksploitasi atau merendahkan perempuan dan wanita muda di media sosial, laporlah. Tidak perlu mengandalkan media utama untuk menyebarkan pesan. Media sosial adalah cara yang bagus untuk berbagi artikel, tips, dan alat untuk pencegahan kekerasan.
+                                    </li>
+                                    <li class="mb-8">
+                                        3. Tindakan Proaktif : Jika Anda melihat seseorang mengambil atau mendorong perempuan atau wanita, lakukan sesuatu untuk menghentikan perilaku kekerasan tersebut. Jangan biarkan teman-teman dan rekan Anda melakukan pelacakan seksual tanpa persetujuan. Jadilah orang yang berani untuk berbicara melawan pelacakan seksual dan pelecehan seksual.
+                                    </li>
+                                    <li class="mb-8">
+                                        4. Membuat Klub atau Grup : Buatlah klub atau grup setelah sekolah di mana Anda dapat membahas pandangan dan pengalaman Anda secara terbuka dan mendukung teman-teman Anda. Ini dapat membantu mengubah persepsi dan menciptakan lingkungan yang lebih aman dan mendukung
+                                    </li>
+                                    <li class="mb-8">
+                                        5. Refleksi dan Perubahan : Refleksi tentang keyakinan, tindakan, dan pendapat Anda dan mengapa Anda memilikinya. Jadilah jujur, mengakui kesalahan Anda, dan berkomitmen untuk mengubah cara Anda berpikir dan bertindak.
+                                    </li>
+                                    <li class="mb-8">
+                                        6. Mendukung Korban : Jika teman Anda mengungkapkan kekerasan yang mereka alami, percayai mereka dan dukung keputusan mereka tanpa memandang.
+                                    </li>
+                                    <li class="mb-8">
+                                        7. Mengetahui Sumber Daya : Familiarisasi diri dengan sumber daya untuk perempuan dan wanita di komunitas Anda, termasuk pusat perempuan, tempat perlindungan, dan organisasi anti-kekerasan. Jadilah sumber daya positif bagi perempuan di sekitar Anda dengan berbagi informasi dan membuat referensi.
+                                    </li>
+                                    <li class="mb-8">
+                                        8. Berpartisipasi dalam Upaya Pencegahan : Berikan waktu Anda untuk mencegah kekerasan dengan berbicara dengan orang lain. Ini membawa kesadaran tentang isu ini, yang akan memotivasi orang lain untuk bertindak.
+                                    </li>
+
+                                </ol>
+                                <p>
+                                    Dengan mengambil langkah-langkah ini, pelajar dapat berkontribusi dalam mencegah kekerasan gender dan seksual, serta menciptakan lingkungan yang lebih aman dan mendukung bagi semua orang.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn bg-primary cursor-pointer p-8 rounded-md text-white" id="close-modal-4">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+
+
+                </div>
+            </div>
+            <!--  -->
+
+            <!-- Cara Kerja -->
+            <div class="flex justify-center w-100 p-12 flex-col" id="cara-kerja" style="padding:32px">
+                <div class="text-center mb-16">
+                    <h4 class="text-primary">Panduan</h4>
+                    <h2 class="text-primary mb-8" style="font-size:1.6rem">Cara Kerja</h2>
+                    <p>Dapat rujukan kepada lembaga layanan terdekat.
+                    </p>
+                </div>
+                <div class="px-64 flex flex-row gap-12" id="items-kerja-main">
+                    <div class="w-half" data-aos="zoom-in-up">
+                        <img src="assets/img/4957155-removebg-preview.png" class="w-100 " />
+                    </div>
+                    <div class="flex flex-col" style="padding: 32px;gap:48px" id="items-kerja">
+                        <div class="flex flex-row gap-12" data-aos="fade-right">
+                            <div class="flex items-center">
+                                <div class="round bg-primary w-3 h-3 flex justify-center items-center text-white">01</div>
+                            </div>
+                            <div>
+                                <h3>Cari Lembaga Layanan</h3>
+                                <p>Anda bisa mencari lembaga berdasarkan jenis layanan atau lokasi.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-12" data-aos="fade-right">
+                            <div class="flex items-center">
+                                <div class="round bg-primary w-3 h-3 flex justify-center items-center text-white">02</div>
+                            </div>
+                            <div>
+                                <h3>Dapat informasi</h3>
+                                <p>Tiap profil lembaga layanan termasuk nomor kontak, akun media sosial, dan alamat kantor.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-12" data-aos="fade-right">
+                            <div class="flex items-center">
+                                <div class="round bg-primary w-3 h-3 flex justify-center items-center text-white">03</div>
+                            </div>
+                            <div>
+                                <h3>Hubungi lembaga layanan</h3>
+                                <p>Jangan menunda untuk hubungi lembaga. Mereka berada untuk membantu Anda.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+
+            <!-- footer -->
+          
+            <div class="flex flex-col h-8 w-100 px-16 bg-secondary text-white " style="padding:32px">
+                <div class="flex flex-row justify-between mb-32 items-center">
+                    <div>
+                        <h2>Safenet</h2>
+                    </div>
+                    <div class="flex flex-col">
+                        <span style="font-size:0.9rem">SafeNet@gmail.com</span>
+                    </div>
+                </div>
+                <div class="text-center flex justify-center items-end ">
+                    <span style="font-size:0.9rem">Copyright 2024.all right reserved</span>
+                </div>
+            </div>
+            <!--  -->
+        </section>
+    </main>
+
+    <script src="index.js" type="module"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
