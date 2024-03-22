@@ -346,6 +346,11 @@ html{
     color:rgb(201, 201, 201)
 }
 
+.card-bantuan:hover button{
+    background-color:white;
+    color:var(--primary-color)
+}
+
 .main-bg{
     background-image: linear-gradient(to bottom,#000,#00000060),url("https://images.unsplash.com/photo-1620008850344-1bc6d8ae3e2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     width: 100%;
@@ -378,6 +383,11 @@ html{
 
 .card-image:hover img{
     transform: scale(1.05);
+}
+
+.card-image:hover button{
+    background-color:white;
+    color:var(--primary-color)
 }
 
 .modal{
@@ -429,7 +439,7 @@ html{
     }
 }
 
-@media screen and (max-width:700px) {
+@media only screen and (min-width:300px) and (max-width:700px) {
     #menu-bar{
         display:flex
     }
@@ -476,4 +486,45 @@ html{
     #content{
         justify-content: center;
     }
+
+    #footer{
+        flex-direction: column;
+        height:24em;
+        gap:0;
+        padding:16px;
+        width: 100%;
+    }
+
+    #footer-top{
+        flex-direction: column;
+        padding:0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    #footer-text{
+        width:100%
+    }
+}
+
+@media only screen and (min-width:701px) and (max-width:1024px){
+    #container-bantuan{
+        gap:0;
+        justify-content: center;
+    }
+    .card-bantuan{
+        width: 45%;
+    }
+    #content{
+        justify-content: center;
+    }
+    #informasi-card{
+        justify-content: center;
+    }
+    .card-image{
+        width:45%
+    }
+    .card-informasi{
+        width:45%
+    }
+   
 }

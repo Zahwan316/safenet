@@ -117,7 +117,7 @@ export const konseling = [
         deskripsi:"Bullyid Indonesia adalah layanan online konseling dengan psikolog dan pengacara berlisensi dengan fitur “anonim” saat sesi konseling untuk korban kekerasan, cyberbullying, revenge porn dan permasalahan kesehatan mental lainnya. Layanan tersedia untuk seluruh wilayah Indonesia."
     }, 
     {
-        id:'ksl#3',
+        id:'ksl#4',
         id_kota:4,
         name:"WCC Mawar Balqis",
         alamat:"Jl. Serayu No.11, Jungjang, Kec. Arjawinangun, Cirebon, Jawa Barat 45162, Indonesia",
